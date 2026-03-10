@@ -5,6 +5,7 @@ Indian stock markets currently operate on **T+1 settlement**, locking up over **
 The **BharatSettlement Layer** is a blockchain-based protocol that enables **Atomic Delivery vs. Payment (DvP)**. It reduces settlement time from 24 hours (T+1) to **under 5 seconds (T+0)** using smart contracts.
 
 ---
+BharatSettlement is a blockchain-powered settlement layer that enables instant T+0 Delivery vs Payment (DvP) for stock markets, reducing settlement time from 24 hours to under 5 seconds while eliminating counterparty risk.
 
  Architecture
 - **Solidity Smart Contracts:** 

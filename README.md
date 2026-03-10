@@ -1,7 +1,3 @@
-# BharatSettlement Layer: Blockchain-based T+0 Securities Settlement
-
-**Project for Horizon 1.0 - Vidyavardhini’s College of Engineering and Technology**
-
 ## 📌 Problem Statement
 Indian stock markets currently operate on **T+1 settlement**, locking up over **₹6 lakh crore daily** in clearing corporations. This creates counterparty risk, high margin requirements, and frozen capital for 24 hours.
 

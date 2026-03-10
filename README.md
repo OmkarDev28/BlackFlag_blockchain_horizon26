@@ -21,6 +21,7 @@ npm install express cors ethers hardhat @openzeppelin/contracts
 
 
 **Tech Stack**
+
 Smart Contracts: Solidity, Hardhat Local Node 
 
 Backend API: Node.js, Express.js, Ethers.js (v6) 

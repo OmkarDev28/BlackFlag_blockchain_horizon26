@@ -65,9 +65,8 @@ npm install
 npm run dev
 ```
 
-## 🇮🇳 Integration with Indian Rails
+## Integration with Indian Rails
 - **UPI/RTGS Bridge:** Our system uses a backend oracle to listen for UPI/RTGS incoming payments. Once verified, it automatically mints `Digital INR` to the user's wallet, enabling a seamless transition from traditional banking to blockchain settlement.
 - **SEBI Compliance:** The `AtomicSettlement` contract includes an `onlyOwner` modifier for the `settle` function, ensuring only SEBI-authorized Clearing Corporations can trigger the final swap.
 
 ---
-**Built with ❤️ for the Indian Financial Ecosystem.**

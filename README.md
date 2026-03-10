@@ -1,45 +1,73 @@
-**SEBI Real-Time Settlement Layer (T+0 DVP)**
+# BharatSettlement Layer: Blockchain-based T+0 Securities Settlement
 
-LINK: <https://362ydk.csb.app/>
+**Project for Horizon 1.0 - Vidyavardhini’s College of Engineering and Technology**
 
-A blockchain-powered Delivery vs. Payment (DVP) system enabling atomic, real-time settlement for Indian equity markets.
+## 📌 Problem Statement
+Indian stock markets currently operate on **T+1 settlement**, locking up over **₹6 lakh crore daily** in clearing corporations. This creates counterparty risk, high margin requirements, and frozen capital for 24 hours.
 
-**Description & The Problem It Solves**
+## 🚀 The Solution
+The **BharatSettlement Layer** is a blockchain-based protocol that enables **Atomic Delivery vs. Payment (DvP)**. It reduces settlement time from 24 hours (T+1) to **under 5 seconds (T+0)** using smart contracts.
 
-In the current Indian Stock Market, millions of trades are executed daily. However, while funds are locked instantly, the actual transfer of shares takes a full business day (T+1 settlement). This creates systemic risk and traps thousands of crores in a "waiting room" clearinghouse.
+---
 
-**Our Solution:** We built a "Black Box" (Blockchain Smart Contract) that enforces strict Delivery versus Payment (DVP). The system guarantees that fiat (Digital INR) and securities (Company Shares) are swapped at the exact same few seconds. If either party defaults, the transaction mathematically reverts. No middleman, no T+1 delays, zero counterparty risk.
+## 🏗️ Architecture
+- **Solidity Smart Contracts:** 
+  - `INR.sol`: Digital Rupee (ERC20) for instant payments.
+  - `SecurityToken.sol`: Tokenized Equity Shares (ERC20).
+  - `AtomicSettlement.sol`: The DvP engine for simultaneous swaps.
+- **Node.js/Express Backend:** Acts as the Clearing Corporation interface & UPI/RTGS bridge.
+- **React Frontend:** Real-time dashboard for traders and settlement monitoring.
 
+---
 
-**Installation & Setup**     
+## ⚙️ How It Works (The Atomic Flow)
+1. **Tokenization:** Fiat (INR) and Securities (Reliance/TCS) are tokenized on-chain.
+2. **Matching:** The system matches a Buyer and Seller.
+3. **Atomic Swap:** The `AtomicSettlement` contract executes a **single transaction** that transfers shares to the buyer and money to the seller simultaneously.
+4. **Reversion Safety:** If either party lacks the assets, the transaction fails completely, ensuring **Zero Counterparty Risk**.
 
-Follow these exact steps to run the local blockchain "Rules-Logic" and the API "Middle-man". This setup prioritizes "DVP" and gets you running in minutes.
+---
 
-Prerequisites: Node.js (v18+) and npm installed.
+## 📊 Cost-Benefit Analysis: T+1 vs. T+0
 
-1. Clone the repository & install dependencies
+| Feature | Traditional (T+1) | BharatSettlement (T+0) |
+|---------|-------------------|------------------------|
+| **Settlement Time** | 24 - 48 Hours | < 5 Seconds |
+| **Counterparty Risk** | High (24h window) | **Zero** (Atomic) |
+| **Capital Efficiency** | Locked for 1 day | **100% Instant Reuse** |
+| **Daily Frozen Capital** | ₹6,00,000 Crore | ₹0 (Unlocked) |
+| **Margin Requirements** | High (to cover risk) | Significant Reduction |
+| **Intermediary Costs** | Multiple layers | Peer-to-Peer / Direct |
 
-git clone <https://github.com/OmkarDev28/BlackFlag_blockchain_horizon26>
-  
-mkdir sebi-realtime-settlement
+---
 
-cd sebi-realtime-settlement
+## 🛠️ Setup & Installation
 
-npm install --save-dev hardhat
+### 1. Blockchain (Hardhat)
+```bash
+cd blockchain
+npm install
+npx hardhat node
+npx hardhat run scripts/deploy.js --network localhost
+```
 
-npm install express cors ethers hardhat @openzeppelin/contracts
+### 2. Backend (Express)
+```bash
+cd backend
+npm install
+node index.js
+```
 
-2. Node & Hardhat Project
-   
-npm init -y
-  
-npx hardhat init
+### 3. Frontend (React/Vite)
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
+## 🇮🇳 Integration with Indian Rails
+- **UPI/RTGS Bridge:** Our system uses a backend oracle to listen for UPI/RTGS incoming payments. Once verified, it automatically mints `Digital INR` to the user's wallet, enabling a seamless transition from traditional banking to blockchain settlement.
+- **SEBI Compliance:** The `AtomicSettlement` contract includes an `onlyOwner` modifier for the `settle` function, ensuring only SEBI-authorized Clearing Corporations can trigger the final swap.
 
-
-**Tech Stack**
-
-Smart Contracts: Solidity, Hardhat Local Node         
-Backend API: Node.js, Express.js, Ethers.js (v6)       
-Frontend UI: React-vite, JavaScript (Fetch API)        
-
+---
+**Built with ❤️ for the Indian Financial Ecosystem.**

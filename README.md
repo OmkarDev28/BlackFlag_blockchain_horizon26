@@ -17,6 +17,8 @@ BharatSettlement is a blockchain-powered settlement layer that enables instant T
 
 ---
 
+![image alt](https://github.com/OmkarDev28/BlackFlag_blockchain_horizon26/blob/c11a6785667ac63e46cc365c7535b2cb1467c634/Screenshot%202026-03-10%20230717.png)
+
  How It Works (The Atomic Flow)
 1. **Tokenization:** Fiat (INR) and Securities (Reliance/TCS) are tokenized on-chain.
 2. **Matching:** The system matches a Buyer and Seller.

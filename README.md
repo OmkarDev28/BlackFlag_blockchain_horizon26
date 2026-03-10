@@ -1,4 +1,4 @@
-## 📌 Problem Statement
+Problem Statement
 Indian stock markets currently operate on **T+1 settlement**, locking up over **₹6 lakh crore daily** in clearing corporations. This creates counterparty risk, high margin requirements, and frozen capital for 24 hours.
 
 ## 🚀 The Solution
@@ -6,7 +6,7 @@ The **BharatSettlement Layer** is a blockchain-based protocol that enables **Ato
 
 ---
 
-## 🏗️ Architecture
+ Architecture
 - **Solidity Smart Contracts:** 
   - `INR.sol`: Digital Rupee (ERC20) for instant payments.
   - `SecurityToken.sol`: Tokenized Equity Shares (ERC20).
@@ -16,7 +16,7 @@ The **BharatSettlement Layer** is a blockchain-based protocol that enables **Ato
 
 ---
 
-## ⚙️ How It Works (The Atomic Flow)
+ How It Works (The Atomic Flow)
 1. **Tokenization:** Fiat (INR) and Securities (Reliance/TCS) are tokenized on-chain.
 2. **Matching:** The system matches a Buyer and Seller.
 3. **Atomic Swap:** The `AtomicSettlement` contract executes a **single transaction** that transfers shares to the buyer and money to the seller simultaneously.
@@ -24,7 +24,7 @@ The **BharatSettlement Layer** is a blockchain-based protocol that enables **Ato
 
 ---
 
-## 📊 Cost-Benefit Analysis: T+1 vs. T+0
+Cost-Benefit Analysis: T+1 vs. T+0
 
 | Feature | Traditional (T+1) | BharatSettlement (T+0) |
 |---------|-------------------|------------------------|
@@ -34,7 +34,7 @@ The **BharatSettlement Layer** is a blockchain-based protocol that enables **Ato
 
 ---
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 ### 1. Blockchain (Hardhat)
 ```bash

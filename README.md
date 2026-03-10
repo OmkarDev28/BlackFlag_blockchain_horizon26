@@ -18,21 +18,22 @@ Follow these exact steps to run the local blockchain "Rules-Logic" and the API "
 Prerequisites: Node.js (v18+) and npm installed.
 
 1. Clone the repository & install dependencies
-  git clone <https://github.com/OmkarDev28/BlackFlag_blockchain_horizon26>
+
+git clone <https://github.com/OmkarDev28/BlackFlag_blockchain_horizon26>
   
-  mkdir sebi-realtime-settlement
+mkdir sebi-realtime-settlement
 
-  cd sebi-realtime-settlement
+cd sebi-realtime-settlement
 
-  npm install --save-dev hardhat
+npm install --save-dev hardhat
 
-  npm install express cors ethers hardhat @openzeppelin/contracts
+npm install express cors ethers hardhat @openzeppelin/contracts
 
 2. Node & Hardhat Project
    
-  npm init -y
+npm init -y
   
-  npx hardhat init
+npx hardhat init
 
 
 

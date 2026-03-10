@@ -31,9 +31,6 @@ The **BharatSettlement Layer** is a blockchain-based protocol that enables **Ato
 | **Settlement Time** | 24 - 48 Hours | < 5 Seconds |
 | **Counterparty Risk** | High (24h window) | **Zero** (Atomic) |
 | **Capital Efficiency** | Locked for 1 day | **100% Instant Reuse** |
-| **Daily Frozen Capital** | ₹6,00,000 Crore | ₹0 (Unlocked) |
-| **Margin Requirements** | High (to cover risk) | Significant Reduction |
-| **Intermediary Costs** | Multiple layers | Peer-to-Peer / Direct |
 
 ---
 
@@ -61,8 +58,3 @@ npm install
 npm run dev
 ```
 
-## Integration with Indian Rails
-- **UPI/RTGS Bridge:** Our system uses a backend oracle to listen for UPI/RTGS incoming payments. Once verified, it automatically mints `Digital INR` to the user's wallet, enabling a seamless transition from traditional banking to blockchain settlement.
-- **SEBI Compliance:** The `AtomicSettlement` contract includes an `onlyOwner` modifier for the `settle` function, ensuring only SEBI-authorized Clearing Corporations can trigger the final swap.
-
----

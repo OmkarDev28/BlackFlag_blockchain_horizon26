@@ -60,7 +60,9 @@ cd frontend
 npm install
 npm run dev
 ```
+![image alt](![image alt](https://github.com/OmkarDev28/BlackFlag_blockchain_horizon26/blob/c11a6785667ac63e46cc365c7535b2cb1467c634/Screenshot%202026-03-10%20230717.png)
 
-[![Video Title]([![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
+[![Demo]([![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 
 

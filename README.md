@@ -16,17 +16,21 @@ Follow these exact steps to run the local blockchain "Kitchen" and the API "Wait
 Prerequisites: Node.js (v18+) and npm installed.
 
 1. Clone the repository & install dependencies
-git clone <https://github.com/OmkarDev28/BlackFlag_blockchain_horizon26>
-cd sebi-realtime-settlement
-npm install express cors ethers hardhat @openzeppelin/contracts
+  git clone <https://github.com/OmkarDev28/BlackFlag_blockchain_horizon26>          
+  mkdir sebi-realtime-settlement
+  cd sebi-realtime-settlement
+  npm install --save-dev hardhat
+  npm install express cors ethers hardhat @openzeppelin/contracts
+
+2. Node & Hardhat Project
+  npm init -y
+  npx hardhat init
 
 
 
 **Tech Stack**
 
-Smart Contracts: Solidity, Hardhat Local Node 
-
-Backend API: Node.js, Express.js, Ethers.js (v6) 
-
-Frontend UI: React-vite, JavaScript (Fetch API)
+Smart Contracts: Solidity, Hardhat Local Node         
+Backend API: Node.js, Express.js, Ethers.js (v6)       
+Frontend UI: React-vite, JavaScript (Fetch API)        
 

@@ -65,6 +65,6 @@ npm run dev
 ![image alt](![image alt](https://github.com/OmkarDev28/BlackFlag_blockchain_horizon26/blob/5cb750c120da45efb6bc6866039ae5f3b3bc6ffc/Screenshot%202026-03-10%20232752.png)
 
 
-[![Demo]([![Video Title](https://img.youtube.com/vi/UhXF3ssQYIs/0.jpg)](https://www.youtube.com/watch?v=UhXF3ssQYIs)
+[![Horizon](https://img.youtube.com/vi/UhXF3ssQYIs/0.jpg)](https://www.youtube.com/watch?v=UhXF3ssQYIs)
 
 

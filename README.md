@@ -6,7 +6,7 @@ The **BharatSettlement Layer** is a blockchain-based protocol that enables **Ato
 
 ---
 
-[DEMO]((https://drive.google.com/file/d/1y4ohjFYMdp4dT63Cvyho1OdYUktBItgi/view?usp=sharing))    
+![DEMO] ((https://drive.google.com/file/d/1y4ohjFYMdp4dT63Cvyho1OdYUktBItgi/view?usp=sharing))    
 BharatSettlement is a blockchain-powered settlement layer that enables instant T+0 Delivery vs Payment (DvP) for stock markets, reducing settlement time from 24 hours to under 5 seconds while eliminating counterparty risk.
 
  Architecture
